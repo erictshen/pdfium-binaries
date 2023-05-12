@@ -34,7 +34,6 @@ case "$OS" in
     ;;
 
   wasm)
-    mv "$BUILD/pdfium.html" "$STAGING_LIB"
     mv "$BUILD/pdfium.js" "$STAGING_LIB"
     mv "$BUILD/pdfium.wasm" "$STAGING_LIB"
     rm -rf "$STAGING/include/cpp"
