@@ -16,6 +16,8 @@ if [ "$TARGET_CPU" == "wasm" ]; then
     -s WASM=1
     -s ALLOW_MEMORY_GROWTH=1
     -s EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]'
+    -s MODULARIZE=1
+    -s 'EXPORT_NAME="createPDFIUM"'
     -o "$BUILD_DIR/pdfium.html"
     "$LIBPDFIUMA"
     --no-entry
